@@ -12,6 +12,12 @@
 		2084EDCF2280B6F5002DAC2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2084EDCD2280B6F5002DAC2E /* Main.storyboard */; };
 		2084EDD12280B6F5002DAC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2084EDD02280B6F5002DAC2E /* Assets.xcassets */; };
 		2084EDD42280B6F5002DAC2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2084EDD22280B6F5002DAC2E /* LaunchScreen.storyboard */; };
+		2084EDE02280B74F002DAC2E /* NibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084EDDC2280B74F002DAC2E /* NibViewController.swift */; };
+		2084EDE12280B74F002DAC2E /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084EDDD2280B74F002DAC2E /* NibView.swift */; };
+		2084EDE22280B74F002DAC2E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084EDDE2280B74F002DAC2E /* NibLoadable.swift */; };
+		2084EDE32280B74F002DAC2E /* NibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084EDDF2280B74F002DAC2E /* NibLoader.swift */; };
+		2084EDE52280B77A002DAC2E /* MyCustomNIBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084EDE42280B77A002DAC2E /* MyCustomNIBView.swift */; };
+		2084EDE72280B78D002DAC2E /* MyCustomNIBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2084EDE62280B78D002DAC2E /* MyCustomNIBView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		2084EDD02280B6F5002DAC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2084EDD32280B6F5002DAC2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2084EDD52280B6F5002DAC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2084EDDC2280B74F002DAC2E /* NibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibViewController.swift; sourceTree = "<group>"; };
+		2084EDDD2280B74F002DAC2E /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		2084EDDE2280B74F002DAC2E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		2084EDDF2280B74F002DAC2E /* NibLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoader.swift; sourceTree = "<group>"; };
+		2084EDE42280B77A002DAC2E /* MyCustomNIBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomNIBView.swift; sourceTree = "<group>"; };
+		2084EDE62280B78D002DAC2E /* MyCustomNIBView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomNIBView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,7 @@
 		2084EDBD2280B6F5002DAC2E = {
 			isa = PBXGroup;
 			children = (
+				2084EDDB2280B708002DAC2E /* NibView */,
 				2084EDC82280B6F5002DAC2E /* NibViewExample */,
 				2084EDC72280B6F5002DAC2E /* Products */,
 			);
@@ -60,8 +73,21 @@
 				2084EDD02280B6F5002DAC2E /* Assets.xcassets */,
 				2084EDD22280B6F5002DAC2E /* LaunchScreen.storyboard */,
 				2084EDD52280B6F5002DAC2E /* Info.plist */,
+				2084EDE42280B77A002DAC2E /* MyCustomNIBView.swift */,
+				2084EDE62280B78D002DAC2E /* MyCustomNIBView.xib */,
 			);
 			path = NibViewExample;
+			sourceTree = "<group>";
+		};
+		2084EDDB2280B708002DAC2E /* NibView */ = {
+			isa = PBXGroup;
+			children = (
+				2084EDDE2280B74F002DAC2E /* NibLoadable.swift */,
+				2084EDDF2280B74F002DAC2E /* NibLoader.swift */,
+				2084EDDD2280B74F002DAC2E /* NibView.swift */,
+				2084EDDC2280B74F002DAC2E /* NibViewController.swift */,
+			);
+			path = NibView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2084EDD42280B6F5002DAC2E /* LaunchScreen.storyboard in Resources */,
+				2084EDE72280B78D002DAC2E /* MyCustomNIBView.xib in Resources */,
 				2084EDD12280B6F5002DAC2E /* Assets.xcassets in Resources */,
 				2084EDCF2280B6F5002DAC2E /* Main.storyboard in Resources */,
 			);
@@ -135,7 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2084EDE32280B74F002DAC2E /* NibLoader.swift in Sources */,
+				2084EDE12280B74F002DAC2E /* NibView.swift in Sources */,
+				2084EDE02280B74F002DAC2E /* NibViewController.swift in Sources */,
+				2084EDE52280B77A002DAC2E /* MyCustomNIBView.swift in Sources */,
 				2084EDCC2280B6F5002DAC2E /* ViewController.swift in Sources */,
+				2084EDE22280B74F002DAC2E /* NibLoadable.swift in Sources */,
 				2084EDCA2280B6F5002DAC2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
